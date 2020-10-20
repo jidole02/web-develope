@@ -1,0 +1,160 @@
+header{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    opacity: 0.9;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+header > a{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    margin-left: 70px;
+    padding-bottom: 10px;
+}
+header > a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+header > p{
+    color: rgb(255, 255, 255);
+    margin-right: 700px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    background-color: black;
+    background-image: url(./../img/배경.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300vh;
+    overflow-x: hidden;
+}
+p > a{
+    color: rgb(255, 53, 53);
+}
+.loginBox{
+    width: 100px;
+    padding: 5px 0;
+    border: 1px solid rgb(110, 255, 146);
+    text-align: center;
+    color: rgb(110, 255, 146);
+    margin-left: 70px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.loginBox:hover{
+    background-color: rgb(110, 255, 146);
+    color: black;
+    transition: 0.5s;
+    font-weight: 600;
+}
+::-webkit-scrollbar { width: 5px; }
+/* 스크롤바의 width */
+::-webkit-scrollbar-track { background-color: #3f3f3f; }
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { 
+    background: linear-gradient(to bottom, #606a6d, #66706f); 
+}
+::-webkit-scrollbar-button { display: none; }
+.introduceDiv:nth-of-type(1){
+    background-image: url(./../img/t1.PNG);
+    background-size: cover;
+}
+.introduceDiv:nth-of-type(2){
+    background-image: url(./../img/t2.PNG);
+    background-size: cover;
+}
+.introduceDiv:nth-of-type(3){
+    background-image: url(./../img/t3.PNG);
+    background-size: cover;
+}
+.introduceDiv:nth-of-type(4){
+    background-image: url(./../img/t4.PNG);
+    background-size: cover;
+}
+section{
+    width: 100%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+section > a{
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+section > button{
+    width: 230px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(110, 255, 146);
+    margin-top: 30px;
+    color: rgb(110, 255, 146);
+    font-size: 17px;
+    transition: all 0.5s ease-out;
+}
+section > button:hover{
+    background-color: rgb(110, 255, 146);
+    color: rgba(0, 0, 0, 0.74);
+    opacity: 0.6;
+}
+.arrowDiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1.4px solid white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 48.7vw;
+    margin-top: 100px;
+    animation-name: upDown;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0;
+    display: flex;
+}
+.arrowDiv > img{
+    width: 40px;
+    height: 40px;
+}
+.arrowDiv > a{
+    color: white;
+    font-size: 15px;
+}
+@keyframes upDown{
+    from{
+        margin-top: 100px;
+    }
+    to{
+        margin-top: 80px;
+    }
+}
+.snsContainer{
+    left: 91vw;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 47vw;
+    position: fixed;
+}
+.snsContainer > a > img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
