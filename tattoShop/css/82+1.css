@@ -7,6 +7,10 @@ header{
     position: fixed;
     opacity: 0.9;
     padding-top: 10px;
+    background-color: transparent;
+    position: absolute;
+    position: fixed;
+    z-index: 20;
 }
 a{
     text-decoration: none;
@@ -17,9 +21,11 @@ header > a{
     font-size: 19px;
     margin-left: 70px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 header > a:hover{
-    border-bottom: 2px solid rgb(255, 255, 255);
+/*     border-bottom: 2px solid rgb(255, 255, 255); */
+color: rgb(133, 141, 105);
 }
 header > p{
     color: rgb(255, 255, 255);
@@ -30,14 +36,15 @@ header > p{
     cursor: pointer;
 }
 body{
+    width: 400vw;
     margin: 0;
-    background-color: black;
     background-image: url(./../img/배경.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 300vh;
-    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
 }
 p > a{
     color: rgb(255, 53, 53);
@@ -59,7 +66,8 @@ p > a{
     transition: 0.5s;
     font-weight: 600;
 }
-::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar { width: 5px;
+height: 0px; }
 /* 스크롤바의 width */
 ::-webkit-scrollbar-track { background-color: #3f3f3f; }
 /* 스크롤바의 전체 배경색 */
@@ -83,8 +91,14 @@ p > a{
     background-image: url(./../img/t4.PNG);
     background-size: cover;
 }
+.section1{
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section{
-    width: 100%;
     height: 680px;
     display: flex;
     flex-direction: column;
@@ -105,12 +119,7 @@ section > button{
     margin-top: 30px;
     color: rgb(110, 255, 146);
     font-size: 17px;
-    transition: all 0.5s ease-out;
-}
-section > button:hover{
-    background-color: rgb(110, 255, 146);
-    color: rgba(0, 0, 0, 0.74);
-    opacity: 0.6;
+    outline: none;
 }
 .arrowDiv{
     width: 50px;
@@ -120,14 +129,16 @@ section > button:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-left: 48.7vw;
-    margin-top: 100px;
+    margin-left: 2vw;
     animation-name: upDown;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; 
     opacity: 0;
     display: flex;
+    position: absolute;
+    margin-top: 47vh;
+    position: fixed;
 }
 .arrowDiv > img{
     width: 40px;
@@ -137,14 +148,14 @@ section > button:hover{
     color: white;
     font-size: 15px;
 }
-@keyframes upDown{
+/*  @keyframes upDown{
     from{
-        margin-top: 100px;
+        margin-top: 87vh;
     }
     to{
-        margin-top: 80px;
+        margin-top: 85vh;
     }
-}
+}  */
 .snsContainer{
     left: 91vw;
     width: 200px;
@@ -152,9 +163,144 @@ section > button:hover{
     position: absolute;
     top: 47vw;
     position: fixed;
+    z-index: 20;
 }
 .snsContainer > a > img{
     width: 30px;
     height: 30px;
     margin-left: 10px;
+}
+.page2{
+    width: 100%;
+    height: 130vh;
+    margin-top: 240px;
+    background-color: rgb(37, 37, 41);
+}
+.section2{
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(29, 29, 31);
+}
+.section3{
+    width: 100vw;
+    height: 100%;
+    background-color:red;
+}
+.section4{
+    width: 100vw;
+    height: 100%;
+    background-color: yellow;
+}
+
+.pageContainer{
+    width: 400vw;
+    display: flex;
+    transition: 1s;
+    transform: translateX(-100vw);
+}
+.section2Title{
+    transform: translate(10vw,12vw);
+}
+.section2Title > p{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section2Title > p > a{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(110, 255, 146);
+}
+.section2Title > p:nth-of-type(2){
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+.introVideo{
+    width: 550px;
+    height: 350px;
+    background-color: rgb(55, 56, 61);
+    transform: translate(10vw,12vw);
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(153, 152, 145, 0.3); 
+    border: 1px solid rgb(46, 46, 46);
+    overflow: hidden;
+    border: 1px solid rgb(41, 38, 38);
+    text-align: center;
+}
+.introVideo > button{
+    opacity: 0.8;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(110, 255, 146);
+    color: rgb(110, 255, 146);
+    margin-top: 5px;
+    margin-left: 70%;
+}
+.introVideo > a{
+    color: rgb(131, 124, 124);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.introImg{
+    width: 100%;
+    height: 250px;
+    background-image: url(./../img/타투이스트.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid rgb(41, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+.introImg > img{
+    width: 100px;
+    height: 100px;
+}
+.tattooistContainer{
+    width: 900px;
+    height: 700px;
+    transform: translate(47vw,-13vw);
+}
+.tattooistIntro{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(55, 56, 61);
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+.introImg:hover{
+    opacity: 1;
+}
+.titleCircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: rgb(44, 44, 49);
+    position: absolute;
+    transform: translate(400px,200px);
+    box-shadow: 0px 5px 22px rgb(145, 145, 145, 0.8) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titleCircle > a{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(110, 255, 146);
+}
+.titleCircle > a:nth-of-type(2){
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+#flex{
+    display: flex;
 }
