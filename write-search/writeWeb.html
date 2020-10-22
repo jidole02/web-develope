@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./writeWeb.css">
+</head>
+<body>
+    <div class="writeContainer">
+        <input type="text" name="" id="title" class="title" placeholder="제목을 입력하세요." onkeyup="titleSub()">
+        <textarea name="" id="text" cols="30" rows="10" class="textarea" placeholder="글을 입력하세요." onkeyup="textSub()"></textarea>
+        <button class="submit" onclick="check(); submit()">UPLOAD</button>
+    </div>
+    <div class="list">
+        <div class="searchContainer">
+            <input type="text" name="" id="search" onkeypress="searchUp()" placeholder="검색어 입력">
+        </div>
+        <div id="here"></div>
+    </div>
+    <script src="./writeWeb.js"></script>
+</body>
+</html>

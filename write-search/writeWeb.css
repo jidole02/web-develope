@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    width: 100vw;
+    height: 100vh;
+}
+.writeContainer{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(31, 30, 32);
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgba(221, 221, 194, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    width: 350px;
+    height: 50px;
+    padding: 0px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(34, 31, 31);
+    border-radius: 24px;
+    outline: none;
+    opacity: 0.8;
+    color: white;
+    margin-top: 10px;
+}
+.textarea{
+    width: 350px;
+    padding: 20px 20px;
+    height: 200px;
+    background-color: rgb(34, 31, 31);
+    border: 1px solid white;
+    opacity: 0.8;
+    border-radius: 24px;
+    outline: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.submit{
+    width: 200px;
+    background-color: rgb(34, 31, 31);
+    border: 1px solid greenyellow;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 6px;
+    color: greenyellow;
+}
+.submit:hover{
+    background-color: greenyellow;
+    color: rgb(60, 153, 96);
+    transition: 0.5s;
+    opacity: 0.7;
+}
+.list{
+    width: 250px;
+    height: 300px;
+    background-color: rgb(31, 30, 32);
+    margin-left: 70px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    box-shadow: 0px 3px 20px rgba(221, 221, 194, 0.5);
+    overflow-y: scroll;
+}
+::-webkit-scrollbar { width: 7px; }
+/* 스크롤바의 width */
+::-webkit-scrollbar-track { background-color: #757575; }
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { 
+    background: linear-gradient(to bottom, #5892ff, #617bec); 
+}
+::-webkit-scrollbar-button { display: none; }
+.titleList{
+    width: 100%;
+    height: 50px;
+    padding: 13px 0;
+    border-bottom: 1px dashed rgb(82, 82, 82);
+    text-align: center;
+}
+.titleList > a:nth-of-type(1){
+    color: rgb(175, 175, 175);
+}
+.titleList > button{
+    width: 100px;
+    height: 25px;
+    border: 1px  solid greenyellow;
+    background-color: transparent;
+    color: greenyellow;
+    border-radius: 5px;
+    margin-top: 6px;
+    opacity: 0.8;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.searchContainer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(43, 43, 49);
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchContainer > input{
+    width: 150px;
+    height: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    border-radius: 5px;
+    padding: 0px 5px;
+    outline: none;
+    color: grey;
+}
