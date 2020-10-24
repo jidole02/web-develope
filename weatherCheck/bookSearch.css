@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background-color: rgb(105, 155, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.bookContainer{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(103, 148, 214);
+    border-radius: 10px;
+/*     box-shadow: 0px 10px 40px rgba(82, 99, 156, 0.7); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+::-webkit-scrollbar { width: 7px; }
+/* 스크롤바의 width */
+::-webkit-scrollbar-track { background-color: #ffffff; }
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { 
+    background: linear-gradient(to bottom, #92a6ff, #969dff); 
+}
+::-webkit-scrollbar-button { display: none; }
+h2{
+    color:rgb(255, 255, 255);
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+.bookContainer > input{
+    width: 300px;
+    height: 50px;
+    border-radius: 24px;
+    padding: 0px 20px;
+    outline: none;
+    border: none;
+    background-color: white;
+/*     box-shadow: 0px 3px 10px rgb(93, 93, 158, 0.7); */
+}
+.bookIntro{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    display: flex;
+    background-color: rgb(103, 148, 214);
+    overflow: hidden;
+    padding-right: 10px;
+    overflow-y: scroll;
+/*     box-shadow: 0px 5px 20px rgba(117, 117, 163, 0.7); */
+}
+.bookIntro > img{
+    width: 150px;
+    height: 200px;
+    position: fixed;
+}
+.word{
+    width: 300px;
+    height: 100%;
+    margin-left: 165px;
+    margin-top: 10px;
+}
+a{text-decoration: none;}
+.bookIntro > div > a{
+    color: rgb(209, 233, 255);
+}

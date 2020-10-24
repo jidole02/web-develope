@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bookSearch.css">
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="body">
+    <h2>-Search Book!-</h2>
+    <div class="bookContainer">
+        <div class="bookIntro" id="intro">
+            <img src="./../COLOKY/img/메인배경.jpg" alt="">
+            <div class="word">
+                <a href="">제목 : 제목이 없습니다.</a> <br>
+                <a href="">가격 : 가격이 없습니다.</a> <br>
+                <a href="">설명 : 설명이 없습니다.</a>
+            </div>
+        </div>
+        <input type="text" id="inputName" onkeypress="inputFunc();" placeholder="책을 검색하세요!">
+    </div>
+    <script src="./bookSearch.js"></script>
+</body>
+</html>
