@@ -10,3 +10,14 @@ window.onload = function(){
         entrance.style.transition = '2s'
     }, 2000);
 }
+
+let body = document.getElementById('body')
+let backMain = document.getElementById('backMain')
+function scrollChange(){
+    body.style.transform = ('translateY(-100vh)')
+    body.style.transition = '1.5s'
+}
+backMain.addEventListener('click', function(){
+    body.style.transform = ('translateY(0vh)')
+    body.style.transition = '1.5s'
+})

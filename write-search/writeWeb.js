@@ -38,7 +38,7 @@ function searchUp(){
     console.log(titleArr[i-1])
     for(let j = 0; j < 100; j++){
         if(titleArr[j] == search.value){
-            alert(titleArr[j] + '가 있습니다.')
+            alert(titleArr[j] + '가 검색되었습니다.')
         }
     }
     document.getElementById('search').value = "";

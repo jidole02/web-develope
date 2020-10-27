@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./soundTrip.css">
 </head>
-<body>
+<body id="body">
+<!--     <header></header> -->
     <div class="page1">
         <img src="./img/비행기배경 .png" alt="" class="plane" id="plane">
         <div class="earth"></div>
@@ -14,7 +15,41 @@
          <div class="entrance" id="entrance">
              소리로 하는 여행, <br>
              <a href="">SOUNDTRIP</a> 에 오신 것을 환영합니다.
-             <button>여행하러 가기 ></button>
+             <button onclick="scrollChange()">여행하러 가기 ></button>
+        </div>
+    </div>
+    <div class="page2">
+        <div class="title">
+            <a id="backMain">SOUNDTRIP</a>
+        </div>
+        <div class="container1">
+            <div class="countryIntro">
+                <div class="country" id="c1"></div>
+                <div class="intro">
+                </div>
+            </div>
+            <div class="countryIntro">
+                <div class="country" id="c2"></div>
+                <div class="intro"></div>
+            </div>
+            <div class="countryIntro">
+                <div class="country" id="c3"></div>
+                <div class="intro"></div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="countryIntro">
+                <div class="country" id="c4"></div>
+                <div class="intro"></div>
+            </div>
+            <div class="countryIntro">
+                <div class="country" id="c5"></div>
+                <div class="intro"></div>
+            </div>
+            <div class="countryIntro">
+                <div class="country" id="c6"></div>
+                <div class="intro"></div>
+            </div>
         </div>
     </div>
     <script src="./soundTrip.js"></script>

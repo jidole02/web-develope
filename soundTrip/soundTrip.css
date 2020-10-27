@@ -1,11 +1,18 @@
 body{
     margin: 0;
-    height: 300vh;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(173, 215, 255, 0.8);
 }
 .page1{
     width: 100%;
     height: 100vh;
-    background-color: rgb(46, 49, 51);
+    background-color: rgb(36, 36, 41);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,3 +90,117 @@ a{
     background: linear-gradient(to bottom, #1697bf, #62b7ac); 
 }
 ::-webkit-scrollbar-button { display: none; }
+
+/*page2 시작*/
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     background-image: url(./img/지구배경.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.container1{
+    width: 1200px;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.container2{
+    width: 1200px;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.countryIntro{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 150px;
+    overflow: hidden;
+    box-shadow: 0px 6px 25px rgba(231, 233, 228, 0.6);  
+}
+.country{
+    width: 100%;
+    height: 300px;
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+#c1{
+    background-image: url(./img/미국.png);
+}
+#c2{
+    background-image: url(./img/캐나다.png);
+}
+#c3{
+    background-image: url(./img/호주.png);
+}
+#c4{
+    background-image: url(./img/스위스.png);
+}
+#c5{
+    background-image: url(./img/영국.png);
+}
+#c6{
+    background-image: url(./img/우주배경.jpg);
+}
+.intro{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.intro > a{
+    color: rgb(105, 105, 105);
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.intro > a:nth-of-type(2){
+    color: rgb(255, 50, 50);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    transform: translate(46vw, 44vh);
+    opacity: 0.7;
+}
+.title > a{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: greenyellow;
+    animation-name: change1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@-webkit-keyframes change1 {
+    0% {
+      text-shadow: none;
+    }
+    50% {
+        text-shadow: 0px 0px 20px rgba(242, 255, 195, 0.8);
+    }
+    100% {
+
+        text-shadow: none;
+      }
+  }
