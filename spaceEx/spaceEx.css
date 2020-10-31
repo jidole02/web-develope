@@ -1,15 +1,13 @@
 body{
-    width: 130vw;
+/*     width: 100vw; */
+overflow: hidden;
+width: 180vw;
     margin: 0;
     background-color: rgb(30, 31, 32);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 900px;
-    padding: 0 50vw;
-    justify-content: space-between;
-    transform: translateX(-18vw);
-    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -51,4 +49,16 @@ a{
     width: 700px;
     height: 700px;
     opacity: 1;
+    transition: 1s;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent) , to(rgba(250, 250, 250, 0.4)));
+}
+.planet{
+    width: 120vw;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+/*     margin-left: 30vw; */
 }
