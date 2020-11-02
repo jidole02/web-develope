@@ -3,7 +3,7 @@ body{
 overflow: hidden;
 width: 180vw;
     margin: 0;
-    background-color: rgb(30, 31, 32);
+    background-color: rgb(26, 27, 27);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,4 +61,18 @@ a{
     justify-content: space-between;
     transition: 1s;
 /*     margin-left: 30vw; */
+}
+.introContainer{
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 30;
+    position: fixed;
+    transform: translateX(-75vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
